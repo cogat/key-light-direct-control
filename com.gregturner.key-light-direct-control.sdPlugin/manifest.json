@@ -1,0 +1,45 @@
+{
+  "Name": "Key Light Direct Control",
+  "UUID": "com.gregturner.key-light-direct-control",
+  "Version": "0.1.0.0",
+  "Author": "Greg Turner",
+  "Actions": [
+    {
+      "Name": "Toggle light",
+      "UUID": "com.gregturner.key-light-direct-control.toggle",
+      "Icon": "imgs/actions/toggle/icon",
+      "Tooltip": "Toggle the light on and off.",
+      "PropertyInspectorPath": "ui/key-light-direct-control.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/toggle/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ],
+  "Category": "Key Light Direct Control",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "CodePath": "bin/plugin.js",
+  "Description": "Direct Control for a Key Light (bypassing Control Center)",
+  "Icon": "imgs/plugin/marketplace",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.4"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  }
+}

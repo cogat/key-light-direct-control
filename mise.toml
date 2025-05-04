@@ -1,0 +1,24 @@
+[tools]
+node = "20.19.0"
+"npm:prettier" = "latest"
+
+[tasks.install]
+description = "Install dependencies"
+run = """
+npm install
+streamdeck dev
+"""
+
+[tasks.build]
+description = "Build the plugin"
+run = """
+streamdeck validate com.gregturner.key-light-direct-control.sdPlugin/
+npm run build
+""""
+
+[tasks.watch]
+description = "Run dev server"
+run = """
+streamdeck validate com.gregturner.key-light-direct-control.sdPlugin/
+npm run watch
+""""
